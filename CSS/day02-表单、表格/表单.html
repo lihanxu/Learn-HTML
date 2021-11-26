@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单：通常由表单域、表单控件（表单元素）、提示信息 三部分构成 -->
+    <!-- 表单域：包含表单元素的区域。 会把所有表单数据提交到服务器 -->
+    <form action="demo.php" method="post" name="form1">
+        <!-- 表单元素：允许用户在表单中输入或选择的控件 -->
+
+        <!-- 文本输入框 -->
+        <label for="user">用户名：</label><input type="text" name="username" value="请输入用户名" maxlength="10" id="user">   <br>
+
+        <!-- 密码输入框 -->
+        密码：<input type="password" name="pwd" id=""> <br>
+
+        <!-- 单选annual -->
+        性别：<input type="radio" name="sex" value="男" checked="checked" id="boy"> <label for="boy">男</label> <input type="radio" name="sex" value="女" id="girl"> <label for="girl">女</label>   <br>
+        
+        <!-- 复选框 -->
+        爱好：<input type="checkbox" name="hobby" value="basketball" id="">篮球 <input type="checkbox" name="hobby" value="game" checked="checked" id="">玩游戏 <input type="checkbox" name="hobby" value="打豆豆" id="">打豆豆     <br>
+       
+        <!-- 提交、重置 -->
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重置内容">
+        <br>
+        
+        <!-- 普通按钮 -->
+         <input type="button" value="获取验证码">
+        
+         <!-- 上传 -->
+         上传头像：<input type="file" name="" id="">    <br>
+
+        <!-- 下拉表单 -->
+        地区
+        <select name="city" id="">
+            <option value="">北京</option>
+            <option value="" selected="selected">广东</option>
+            <option value="">江西</option>
+        </select>
+
+        <!-- 文本域 -->
+        今日反馈
+        <textarea name="back" id="" cols="30" rows="10">羊驼</textarea>
+    </form>
+</body>
+</html>

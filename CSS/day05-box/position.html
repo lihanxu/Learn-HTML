@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 150px;
+            background-color: pink;
+        }
+        .test {
+            background-color: blue;
+            /*  1. static 静态对位
+                2. relative 相对定位，相对于自己原先的位置偏移，保留位置
+                3. absolute 绝对定位，相对于祖元素的位置偏移，不保留位置 
+                4. fixed 固定定位，相对于浏览器的可视区域偏移，不保留位置*/
+            position: relative;
+            top: 100px;
+            /* 水平居中 */
+            left: 50%;
+            margin-left: -250px;
+        }
+        .test2 {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            /* 权重，权重大的在顶层 */
+            z-index: 1;
+        }
+        .test3 {
+            width: 50px;
+            height: 30px;
+            background-color: orange;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+        }
+
+        .imagediv {
+            position: fixed;
+            left: 50%;
+            margin-left: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>第一个div</div>
+    <div class="test">第二个div
+        <div class="test2">
+            
+        </div>
+        <div class="test3">
+            
+        </div>
+    </div>
+    <div class="imagediv">
+        <img src="img.jpg" alt="">
+    </div>
+
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+    <p>标签</p>
+</body>
+</html>

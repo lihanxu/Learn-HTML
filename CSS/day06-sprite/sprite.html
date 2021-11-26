@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 60px;
+            height: 60px;
+            margin: 100px auto;
+            background: url(sprites.png) no-repeat -182px 0px;
+        }
+        span {
+            display: inline-block;
+        }
+        .f {
+            width: 95px;
+            height: 112px;
+            background: url(abcd.jpg) no-repeat 0px -140px;
+        }
+        .a {
+            width: 110px;
+            height: 112px;
+            background: url(abcd.jpg) no-repeat 0px -8px;
+        }
+        .c {
+            width: 110px;
+            height: 112px;
+            background: url(abcd.jpg) no-repeat -240px -8px;
+        }
+        .e {
+            width: 110px;
+            height: 112px;
+            background: url(abcd.jpg) no-repeat -480px -8px;
+        }
+
+        /* 三角形 */
+        .box2 {
+            width: 0px;
+            height: 0px;
+            border: 50px solid transparent;
+            /* border-top-color: red; */
+            /* border-right-color: blue; */
+            border-left-color: orange;
+        }
+
+        /* 文字超出部分显示省略号 */
+        .line {
+            width: 100px;
+            background-color: red;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span class="f">f</span>
+    <span class="a">a</span>
+    <span class="c">c</span>
+    <span class="e">e</span>
+
+    <div class="box2"></div>
+    <div class="line">我是段文字，超出部分省略</div>
+</body>
+</html>

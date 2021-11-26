@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1 {
+            width: 100px;
+            height: 80px;
+            background-color: red;
+
+            /* 隐藏元素，继续占有位置 */
+            /* visibility: hidden; */
+
+            /* 隐藏元素，不占有位置 */
+            /* display: none; */
+
+            /* 隐藏元素的内容的超出部分 */
+            overflow: hidden;
+        }
+        .test2 {
+            width: 100px;
+            height: 80px;
+            background-color: red;
+        }
+        .maskdiv{
+            width: 400px;
+            height: 300px;
+            position: relative;
+            top: 0px;
+            left: 50%;
+            margin-left: -150px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .mask {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .maskdiv:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="test1">
+        我是一个盒子，我是一个盒子，我是一个盒子，我是一个盒子，我是一个盒子，我是一个盒子，
+    </div>
+    <br>
+    <div class="test2">
+
+    </div>
+    <div class="maskdiv">
+        <div class="mask">
+
+        </div>
+        <img src="img.jpg" alt="">
+    </div>
+</body>
+</html>

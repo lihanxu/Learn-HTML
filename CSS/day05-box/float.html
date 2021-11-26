@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        div {
+            background-color: pink;
+            text-align: center;
+        }
+        .top {
+            height: 50px;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+        .banner {
+            height: 120px;
+            width: 500px;
+            margin: 0px auto;
+        }
+        .list {
+            /* height: 120px; */
+            width: 500px;
+            margin: 10px auto;
+        }
+        /* 浮动不会压住文字 */
+        .list li {
+            list-style: none;
+            float: left;
+            width: 121px;
+            height: 120px;
+            background-color: red;
+            margin-right: 5px;
+        }
+        .list .lastli {
+            margin-right: 0px;
+        }
+        .footer {
+            height: 100px;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+        /* 清除浮动 1*/
+        .clear {
+            clear: both;
+        }
+
+        /* 清除浮动 2*/
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0px;
+            clear: both;
+            visibility: hidden;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
+
+        /* 清除浮动 3 */
+        /* .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        .clearfix {
+            *zoom: 1;
+        } */
+    </style>
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="list clearfix">
+        <li>1</li>
+        <p>我是一段文字</p>
+        <li>2</li>
+        <li>3</li>
+        <li class="lastli">4</li>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            font-family: "微软雅黑";
+            font-size: 24px;
+        }
+        .bold {
+            font-weight: bolder;
+        }
+        em {
+            font-style: normal;
+        }
+        div {
+            /* 
+            font-style: italic;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace; 
+            */
+            /* 
+            复合属性，不能随便修改顺序，必须保留size和family。
+            font-style font-weight font-size/line-height font-family
+             */
+            font: italic bold 16px 'Courier New', Courier, monospace;
+            /* color: #FF00FF; */
+            color: rgba(255, 0, 0, 0.5);
+            /* 对齐 */
+            text-align: left;
+            /* 装饰文本：下划线、删除线等*/
+            text-decoration: underline;
+            /* 缩进 */
+            text-indent: 2em;
+            /* 行间距 */
+            line-height: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>old face的秘密</h1>
+    <p>第一个段落</p>
+    <p>第二个段落</p>
+    <p>第三个段落</p>
+    <p class="bold">第四个段落</p>
+    <p>第五个段落</p>
+    <p>文本样式</p>
+    <em>倾斜的字体不倾斜</em>
+    <div>三生三世十里桃花，一心一意百行代码</div>
+    <a href="http://www.baidu.com" target="_blank" rel="noopener noreferrer">百度一下，破产不远啦</a>
+</body>
+</html>

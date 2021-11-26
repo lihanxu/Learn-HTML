@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 后代选择器 */
+        ol li {
+            color: red;
+        }
+
+        .ulcolor li {
+            color: green;
+        }
+
+        .diva > a {
+            color: green;
+        }
+
+
+/* 并集选择器 */
+        h4,
+        p {
+            color: pink;
+        }
+
+/* 链接伪类选择器 */
+        /* a:link {
+            color: #333;
+            text-decoration: none;
+        } */
+        /* 访问过后的状态 */
+        a:visited {
+            color: orange;
+        }
+        /* 鼠标经过时的状态 */
+        a:hover {
+            color: blue;
+        }
+        /* 鼠标按下时的状态 */
+        a:active {
+            color: red;
+        } 
+
+/* focus 伪类选择器 */
+        input:focus {
+            color: red;
+            background-color: rgb(128, 163, 128);
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="ulcolor">
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+    </ul>
+    <ul>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+    </ul>
+    <ol>
+        <li>15</li>
+        <li>25</li>
+        <li>35</li>
+        <li>45</li>
+        <li>55</li>
+    </ol>
+    
+    <div class="diva">
+        <a href="#">无效的链接</a>
+        <p>
+            <a href="#">无效的链接</a>
+        </p>
+    </div>
+    <p><a href="#">无效的链接</a></p>
+
+    <a href="www.baidu.com" target="_blank">百度一下</a>
+    <a href="www.baidu.com">百度一下</a>
+    <a href="www.baidu.com">百度一下</a>
+    <a href="www.baidu.com">百度一下</a>
+
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+
+    <h4>OKR</h4>
+    <p>天天上上，好好学习</p>
+</body>
+</html>

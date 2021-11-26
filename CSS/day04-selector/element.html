@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .atest {
+            width: 150px;
+            height: 50px;
+            background-color: red;
+            display: block;
+        }
+        .divtest {
+            width: 150px;
+            height: 50px;
+            background-color: green;
+            display: inline;
+        }
+        span {
+            width: 150px;
+            height: 50px;
+            background-color: yellow;
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            background-color: gray;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            text-indent: 2em;
+            line-height: 40px;
+        }
+        a:hover {
+            background-color: #ff6700;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. 块级元素： 一行只能放一个
+        2. 行内元素： 一行可以放多个
+        3. 行内块元素
+    -->
+
+    <!-- 
+        元素显示模式转换
+        1. 行内元素转换为块级元素： display: block
+        2. 块级元素转换为行内元素： display: inline
+        3. 行内块元素: display: inline-block
+     -->
+     <a class="atest" href="#">这是一个空链接</a>    
+     <br>
+     <div class="divtest">我是块级元素</div>
+     <br>
+     <span>span转换为行内块元素</span>
+     <br>
+     <br>
+     <br>
+     <div>
+        <a href="#">手机 电话卡</a>
+        <a href="#">电视 盒子</a>
+        <a href="#">笔记本 平板</a>
+        <a href="#">出行 穿戴</a>
+        <a href="#">手机 电话卡</a>
+        <a href="#">手机 电话卡</a>
+        <a href="#">手机 电话卡</a>
+     </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            background-color: pink;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.3);
+            text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+        }
+        div:hover {
+            /* 水平偏移，垂直偏移，虚实，大小 */
+            box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .gradcolor {
+            width: 375px;
+            height: 232px;
+            background: -webkit-linear-gradient(left top, #fd43b2, #4948fe);
+        }
+
+    </style>
+</head>
+<body>
+    <div>盒子阴影，文字影音</div>
+    <br>
+    <div class="gradcolor">渐变色</div>
+</body>
+</html>

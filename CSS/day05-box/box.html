@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除内外边距 */
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        div {
+            background-color: pink;
+        }
+        .divtest {
+            width: 200px;
+            height: 10px;
+
+            /* 边框 */
+            /* border-style: solid; 
+            border-color: red;
+            border-width: 30px; */
+
+            /* 复合写法 */
+            border: 30px solid red;
+
+            /* 上边框 */
+            border-top: 30px solid red;
+
+            /* 内间距 */
+            /* padding-left: 20px;
+            padding-right: 30px;
+            padding-top: 50px; */
+
+            /* 复合写法 */
+            /* padding: 20px 30px 40px 50px; */
+            padding: 20px;
+        }
+
+        table {
+            width:500px;
+            height:200px;
+            border: 1px solid red;
+            /* 合并相邻的边框 */
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .nav {
+            height: 42px;
+            border-bottom: 1px solid gray;
+            border-top: 3px solid sandybrown;
+            line-height: 42px;
+            background-color: #fcfcfc;
+        }
+
+        .nav a {
+            display: inline-block;
+            height: 42px;
+            font-size: 12px;
+            color: #4c4c4c;
+            text-decoration: none;
+            padding: 0px 20px;
+        }
+
+        .nav a:hover {
+            color: orange;
+            background-color: gray;
+        }
+
+        .divmargin { 
+            width: 500px;
+            height: 50px;
+            background-color: pink;
+            /* margin: 50px 30px; */
+
+            /* 自动边距: 上下30px， 左右居中 */
+            margin: 30px auto;
+
+            /* 行内或行内块元素居中 */
+            text-align: center;
+        }
+
+        /* 外边距塌陷 */
+        .father {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            margin-top: 10px;
+            /* 添加边框解决塌陷 */
+            /* border-top: 1px solid transparent; */
+
+            /* 添加内间距解决塌陷 */
+            /* padding-top: 1px; */
+
+            /* 解决塌陷 */
+            overflow: hidden;
+        }
+
+        .son {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            margin-top: 30px;
+        }
+
+        .box {
+            width: 298px;
+            height: 415px;
+            background-color: white;
+            margin: 0px auto;
+        }
+        .box img {
+            width: 100%;
+        }
+        .box p {
+            height: 70px;
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 0px 20px;
+        }
+        .pinglun {
+            font-size: 12px;
+            color: #b0b0b0;
+            background-color: white;
+            margin-top: 20px;
+            padding: 0px 20px;
+        }
+        .info {
+            font-size: 14px;
+            background-color: white;
+            margin-top: 15px;
+            padding: 0px 20px;
+        }
+        .name {
+            display: inline-block;
+            font-weight: normal;
+        }
+        .box em {
+            font-style: normal;
+            margin: 0px 6px 0px 15px;
+            color: #ebe4e0;
+        }
+        .jiage {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="divtest">盒子</div>
+    <br>
+    <!-- 小说排名 -->
+    <table>
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近7日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td> 
+                <td><img src="down.jpg" alt=""></td>
+                <td>345</td>
+                <td>123</td>
+                <td><a href="http://www.baidu.com">贴吧</a> <a href="http://www.baidu.com">图片</a> <a href="http://www.baidu.com">百科</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>盗墓笔记</td> 
+                <td><img src="down.jpg" alt=""></td>
+                <td>124</td>
+                <td>167543223</td>
+                <td><a href="http://www.baidu.com">贴吧</a> <a href="http://www.baidu.com">图片</a> <a href="http://www.baidu.com">百科</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>西游记</td> 
+                <td><img src="up.jpg" alt=""></td>
+                <td>212</td>
+                <td>127563</td>
+                <td><a href="http://www.baidu.com">贴吧</a> <a href="http://www.baidu.com">图片</a> <a href="http://www.baidu.com">百科</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>东游记</td> 
+                <td><img src="up.jpg" alt=""></td>
+                <td>234</td>
+                <td>23432</td>
+                <td><a href="http://www.baidu.com">贴吧</a> <a href="http://www.baidu.com">图片</a> <a href="http://www.baidu.com">百科</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>甄嬛传</td> 
+                <td><img src="down.jpg" alt=""></td>
+                <td>767</td>
+                <td>87979</td>
+                <td><a href="http://www.baidu.com">贴吧</a> <a href="http://www.baidu.com">图片</a> <a href="http://www.baidu.com">百科</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div class="nav">
+        <a href="#">导航栏哦</a>
+        <a href="#">这是导航栏</a>
+        <a href="#">导航栏</a>
+        <a href="#">导航栏会导航</a>
+    </div>
+    <div class="divmargin">
+        第一个盒子
+        <span>行内元素</span>
+    </div>
+    <div>第二个盒子</div>
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="img.jpg" alt="">
+        <p>快递牛，整体不错蓝牙可以说秒连。红米给力</p>
+        <div class="pinglun">来自于111747432的评论</div>
+        <div class="info">
+            <h4 class="name">Redmi AirDots真无线蓝...</h4>
+            <em>|</em>
+            <span class="jiage">99.9</span>
+        </div>
+    </div>
+
+</body>
+</html>
